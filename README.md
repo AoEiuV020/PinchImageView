@@ -1,3 +1,5 @@
+[![](https://jitpack.io/v/AoEiuV020/PinchImageView.svg)](https://jitpack.io/#AoEiuV020/PinchImageView)
+
 # PinchImageView
 
 这是一个手势体验极棒但使用简单的ImageView控件，实现了手势放大缩小，平移等功能。PinchImageView继承于ImageView，可以在所有ImageView可以使用的情况下使用。全部的程序仅一个类文件，没有依赖任何特殊的外部库，非常易于集成。
