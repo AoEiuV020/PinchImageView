@@ -561,6 +561,9 @@ public class PinchImageView extends ImageView  {
      */
     protected float calculateNextScale(float innerScale, float outerScale) {
         float currentScale = innerScale * outerScale;
+        if (currentScale < 1.0f && getWidth() > getDrawable().getIntrinsicWidth()) {
+            return 1.0f * getWidth() / getDrawable().getIntrinsicWidth();
+        }
         if (currentScale < MAX_SCALE) {
             return MAX_SCALE;
         } else {
